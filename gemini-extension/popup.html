@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEMP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>BEMP</h2>
+
+        <div class="form-group">
+            <label for="modelSelect">Select Model:</label>
+            <select id="modelSelect">
+                <option value="gemini">Gemini</option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="deepseek">DeepSeek</option>
+                <option value="qwen">Qwen</option>
+                <option value="kimi">Kimi</option>
+                <option value="venice">Venice</option>
+                <option value="blackbox">Blackbox</option>
+            </select>
+        </div>
+
+        <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+        <button id="sendBtn">Send Prompt</button>
+        <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

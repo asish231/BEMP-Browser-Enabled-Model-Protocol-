@@ -1,0 +1,50 @@
+{
+    "manifest_version": 3,
+    "name": "BEMP",
+    "version": "3.1",
+    "description": "Sends prompts to multiple web AIs via DOM automation and WebSocket bridge.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.gemini.google.com/*",
+        "*://*.google.com/*",
+        "*://*.chatgpt.com/*",
+        "*://*.openai.com/*",
+        "*://chat.deepseek.com/*",
+        "*://chat.qwen.ai/*",
+        "*://www.kimi.com/*",
+        "*://kimi.moonshot.cn/*",
+        "*://venice.ai/*",
+        "*://www.blackbox.ai/*",
+        "*://blackbox.ai/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.gemini.google.com/*",
+                "*://*.google.com/*",
+                "*://*.chatgpt.com/*",
+                "*://*.openai.com/*",
+                "*://chat.deepseek.com/*",
+                "*://chat.qwen.ai/*",
+                "*://www.kimi.com/*",
+                "*://kimi.moonshot.cn/*",
+                "*://venice.ai/*",
+                "*://www.blackbox.ai/*",
+                "*://blackbox.ai/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
