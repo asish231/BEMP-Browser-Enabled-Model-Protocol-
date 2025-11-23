@@ -32,7 +32,7 @@ BEMP does **not** replace official APIs for production-grade, large-scale worklo
 
 This project was born from a very concrete pain point:
 
-> *“I had access to powerful AI models via the web – through subscriptions like Google Pro and ChatGPT Go – but I **did not** have API keys. I could use the chat interfaces in the browser, sometimes with generous or even unlimited usage, but I couldn’t integrate them into code without paying for or getting access to separate API plans.*
+> *“I had access to powerful AI models via the web – through subscriptions like Google Pro and ChatGPT Go – but I **did not** have API keys. I could use the chat interfaces in the browser, sometimes with generous or even unlimited usage, but I couldn’t integrate them into code without paying for or getting access to separate API plans."*
 
 This meant:
 - No straightforward way to use these models in **agentic projects**, tools, or backends.
